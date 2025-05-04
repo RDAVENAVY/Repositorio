@@ -6,51 +6,61 @@
 package geometria;
 
 /**
- *
- * @author javier
+ * Clase que representa un triángulo geométrico.
+ * Implementa la interfaz FiguraGeometrica para el cálculo de áreas.
+ * 
+ * @author RDAVENAVY
+ * @version 1.0
+ * @since 04/05/2025
  */
-public class Triangulo implements FiguraGeometrica
-{
+public class Triangulo implements FiguraGeometrica {
+    /**
+     * Base del triángulo
+     */
     private double base;
-    private double altura;
-    private double areaTriangulo;
     
+    /**
+     * Altura del triángulo
+     */
+    private double altura;
+    
+    /**
+     * Área calculada del triángulo
+     */
+    private double areaTriangulo;
 
-    public Triangulo(double base, double altura) 
-    {
+    /**
+     * Constructor que crea un triángulo con base y altura específicas
+     * @param base La base del triángulo (debe ser mayor que 0)
+     * @param altura La altura del triángulo (debe ser mayor que 0)
+     */
+    public Triangulo(double base, double altura) {
         this.base = base;
         this.altura = altura;
     }
 
-    public double getBase() 
-    {
+    public double getBase() {
         return base;
     }
 
-    public void setBase(double base)
-    {
+    public void setBase(double base) {
         this.base = base;
     }
 
-    public double getAltura() 
-    {
+    public double getAltura() {
         return altura;
     }
 
-    public void setAltura(double altura) 
-    {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
 
-    public double getareaTriangulo() 
-    {
+    public double getareaTriangulo() {
         return areaTriangulo;
     }
 
     @Override
-    public void area() 
-    {
+    public void area() {
         areaTriangulo = base * altura / 2;
-    }    
-    
+    }
 }

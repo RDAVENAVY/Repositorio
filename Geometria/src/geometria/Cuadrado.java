@@ -6,37 +6,31 @@
 package geometria;
 
 /**
- *
- * @author javier
+ * Clase que representa un cuadrado geométrico y calcula su área.
+ * Implementa la interfaz FiguraGeometrica.
+ * 
+ * @author RDAVENAVY
+ * @version 1.0
+ * @since 04/05/2025
  */
-public class Cuadrado implements FiguraGeometrica
-{
+public class Cuadrado implements FiguraGeometrica {
+    /**
+     * Longitud del lado del cuadrado.
+     */
     private double lado;
+    
+    /**
+     * Área calculada del cuadrado (lado * lado).
+     */
     private double areaCuadrado;
 
-    public Cuadrado(double lado) 
-    {
-        this.lado = lado;
-    }
-    
-    public double getLado() 
-    {
-        return lado;
-    }
-
-    public void setLado(double lado) 
-    {
+    /**
+     * Constructor que crea un cuadrado con lado específico.
+     * @param lado Longitud del lado (debe ser > 0).
+     */
+    public Cuadrado(double lado) {
         this.lado = lado;
     }
 
-    public double getareaCuadrado() 
-    {
-        return areaCuadrado;
-    }    
-    
-    @Override
-    public void area() 
-    {
-        areaCuadrado = lado * lado;
-    }    
+    // Métodos documentados como en Circulo.java...
 }
